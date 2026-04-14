@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    
 }
 
 body {
@@ -23,9 +24,11 @@ header{
     position: fixed;
     z-index: 1000;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 20px 390px;
     align-items: center;
+    
 }
+
 header ul{
     display: flex;
     gap: 20px;
@@ -39,8 +42,18 @@ header a {
     margin-left: 20px;
     font-weight: 700;
 }
+
+header a:hover{
+    color: #433b47;
+}
+
 main{
     padding-top: 50px;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 }
 /* Hero Section */
 .hero {
@@ -118,24 +131,101 @@ h2 {
 }
 
 /* Contacto */
+
+/* .contact_box {
+    text-align: center;
+} */
+
+.form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact_div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.names{
+    display: flex;
+    gap: 20px;
+}
+
 label {
     font-family: 'Poppins', sans-serif;   
 }
 
+.name_box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+
+.lastname_box{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+}
+
+.email_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
+.mensaje_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.send_button{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.button_send{
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
 footer {
     color: rgb(0, 0, 0);
     background-color: #161B22;
-    padding: 10px;
+    padding: 10px 390px;
     box-shadow: 0 4px 6px rgba(108, 96, 96, 0.05);
     text-align: center;
     width: 100%;
-    max-width: 100%;
-    height: 110px;
-    
+    /* max-width: 100%; */
+    height: 100px;
 }
-footer a p {
+footer a, footer p  {
     color: #F8F9FA;
 }
+
+footer a:hover{
+    color: #433b47;
+}
+
 footer ul {
     display: flex;
     gap: 20px;
