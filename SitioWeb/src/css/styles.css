@@ -10,6 +10,7 @@ body {
     background-color: #F8F9FA;
     color: var(--dark);
     line-height: 1.6;
+    height: 100%;
 }
 
 /* Navegación */
@@ -133,7 +134,13 @@ h2 {
     text-align: center;
     justify-content: center;
     margin-top: 10px;
-    gap: 23em;
+    gap: 5em;
+}
+
+.project_div img {
+    height: 400px;
+    width: 200px;
+
 }
 
 .container {
@@ -255,18 +262,32 @@ label {
 
 
 footer {
-    color: rgb(0, 0, 0);
     background-color: #161B22;
-    padding: 10px 390px;
     box-shadow: 0 4px 6px rgba(108, 96, 96, 0.05);
-    text-align: center;
-    width: 100%;
-    /* max-width: 100%; */
+    max-width: 100%;
     height: 100px;
 }
-footer a, footer p  {
+
+.copy_area{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+footer p {
+    font-size: small;
     color: #F8F9FA;
+    margin: 0;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer a  {
+    color: #F8F9FA;
 }
 
 footer a:hover{
@@ -275,9 +296,59 @@ footer a:hover{
 
 footer ul {
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 55px;
+    justify-content: center;
     list-style-type: none;
     font-family: 'Poppins', sans-serif;
 
 }
+
+
+
+/* .preview-link {
+  text-decoration: none; Quita el subrayado azul feo
+  color: inherit;
+  display: inline-block;
+}
+
+.preview-card {
+  border: 2px solid #00ff41;
+  background: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+Efecto al pasar el mouse (hover)
+.preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ff41;
+}
+
+.iframe-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+iframe {
+  width: 1200px; 
+  height: 800px;
+  transform: scale(0.25); 
+  transform-origin: 0 0;
+  border: none;
+  pointer-events: none; Importante: ignora clics dentro del iframe
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 255, 65, 0.1); Un toque de color verde
+}
+
+.info {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: #00ff41;
+} */
