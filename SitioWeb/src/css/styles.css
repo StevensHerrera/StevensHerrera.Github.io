@@ -6,6 +6,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #F8F9FA;
     color: var(--dark);
@@ -17,7 +21,7 @@ body {
 
 header{
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #161B22;
     display: flex;
     flex-direction: row;
@@ -47,21 +51,6 @@ header a {
 header a:hover{
     color: #433b47;
 }
-.b_index{
-    text-align: start;
-}
-
-/* Hero Section */
-/* .hero {
-    height: 100 vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 10%;
-    background: linear-gradient(135deg, #fff 0%, #e2e8f0 100%);
-} */
 
 main{
     padding-top: 50px;
@@ -71,13 +60,13 @@ main{
     justify-content: center;
     margin: 0 auto;
 }
+
 .main_box{
     height: 550px;
 }
 .main_div{
     display: flex;
     flex-direction: row;
-    /* gap: 300px; */
     justify-content: start;
 }
 .main_text{
@@ -92,11 +81,9 @@ main{
 
 }
 
-
- h1 {
+h1 {
     font-size: 2rem;
     margin-bottom: 8px;
-
 }
 
 div {
@@ -132,9 +119,9 @@ h2 {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 10px;
-    gap: 5em;
+    gap: 10px;
 }
 
 .project_div img {
@@ -282,7 +269,7 @@ footer p {
     color: #F8F9FA;
     margin: 0;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 

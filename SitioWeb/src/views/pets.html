@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,35 +12,142 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/SitioWeb/src/css/styles.css">
+    <link rel="stylesheet" href="/SitioWeb/src/css/styles_pets.css">
 </head>
 
 <body>
     <header>
-        <a class="" href="index.html">Stevens</a>
+        <a class="" href="/index.html">Stevens</a>
         <nav>
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/SitioWeb/src/views/about_me.html">Sobre mí</a></li>
-                <li><a href="/SitioWeb/src/views/projects.html">Proyectos</a></li>
-                <li><a href="/SitioWeb/src/views/contact.html">Contacto</a></li>
+                <li><a href="/index.html#sobre_mi">Sobre mí</a></li>
+                <li><a href="/index.html#mis_proyectos">Proyectos</a></li>
+                <li><a href="/SitioWeb/src/views/pets.html">Mascotas</a></li>
+                <li><a href="/index.html#contact_me">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div>
-            <br>
-            <br>
-            <p>mateo</p>
-            <p>copito</p>
+    <section class="main_box">
+        <h1 class="section_title">Mis mascotas 🐾</h1>
+
+        <div class="pets_grid">
+
+            <!-- ── Linda ── -->
+            <div class="pet_card">
+                <div class="carousel" data-index="0">
+                    <div class="carousel_track">
+                        <img src="../../public/linda_1.jpg" alt="Linda foto 1">
+                        <img src="../../public/linda_2.jpg" alt="Linda foto 2">
+                        <img src="../../public/linda_3.jpg" alt="Linda foto 3">
+                    </div>
+                    <button class="carousel_btn prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="carousel_btn next"><i class="bi bi-chevron-right"></i></button>
+                    <div class="carousel_dots"></div>
+                </div>
+                <div class="pet_info">
+                    <h2 class="pet_name">Linda</h2>
+                    <p class="pet_desc">Descripción de Linda,2012.</p>
+                </div>
+            </div>
+
+            <!-- ── Mateo ── -->
+            <div class="pet_card">
+                <div class="carousel" data-index="0">
+                    <div class="carousel_track">
+                        <img src="../../public/mateo_1.jpg" alt="Mateo foto 1">
+                        <img src="../../public/mateo_2.jpg" alt="Mateo foto 2">
+                        <img src="../../public/mateo_3.jpg" alt="Mateo foto 3">
+                    </div>
+                    <button class="carousel_btn prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="carousel_btn next"><i class="bi bi-chevron-right"></i></button>
+                    <div class="carousel_dots"></div>
+                </div>
+                <div class="pet_info">
+                    <h2 class="pet_name">Mateo</h2>
+                    <p class="pet_desc">Descripción de Mateo, 2016.</p>
+                </div>
+            </div>
+
+            <!-- ── Osito ── -->
+            <div class="pet_card">
+                <div class="carousel" data-index="0">
+                    <div class="carousel_track">
+                        <img src="../../public/osito_1.jpg" alt="Osito foto 1">
+                        <img src="../../public/osito_2.jpg" alt="Osito foto 2">
+                        <img src="../../public/osito_3.jpg" alt="Osito foto 3">
+                    </div>
+                    <button class="carousel_btn prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="carousel_btn next"><i class="bi bi-chevron-right"></i></button>
+                    <div class="carousel_dots"></div>
+                </div>
+                <div class="pet_info">
+                    <h2 class="pet_name">Osito</h2>
+                    <p class="pet_desc">Descripción de Osito, 2024.</p>
+                </div>
+            </div>
+
+            <!-- ── Copito ── -->
+            <div class="pet_card">
+                <div class="carousel" data-index="0">
+                    <div class="carousel_track">
+                        <img src="../../public/copito_1.jpg" alt="Copito foto 1">
+                        <img src="../../public/copito_2.jpg" alt="Copito foto 2">
+                        <img src="../../public/copito_3.jpg" alt="Copito foto 3">
+                    </div>
+                    <button class="carousel_btn prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="carousel_btn next"><i class="bi bi-chevron-right"></i></button>
+                    <div class="carousel_dots"></div>
+                </div>
+                <div class="pet_info">
+                    <h2 class="pet_name">Copito</h2>
+                    <p class="pet_desc">Copito, esta con nosotros desde 2016, hasta la fecha.</p>
+                </div>
+            </div>
+
+            <!-- ── Kako ── -->
+            <div class="pet_card">
+                <div class="carousel" data-index="0">
+                    <div class="carousel_track">
+                        <img src="../../public/kako_1.jpg" alt="Kako foto 1">
+                        <img src="../../public/kako_2.jpg" alt="Kako foto 2">
+                        <img src="../../public/kako_3.jpg" alt="Kako foto 3">
+                    </div>
+                    <button class="carousel_btn prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="carousel_btn next"><i class="bi bi-chevron-right"></i></button>
+                    <div class="carousel_dots"></div>
+                </div>
+                <div class="pet_info">
+                    <h2 class="pet_name">Kako</h2>
+                    <p class="pet_desc">Kako hijo de Milu, estuvo con nosotros desde 2014 hasta el año 2023.</p>
+                </div>
+            </div>
+
+            <!-- ── Milu ── -->
+            <div class="pet_card">
+                <div class="carousel" data-index="0">
+                    <div class="carousel_track">
+                        <img src="../../public/milu_1.jpg" alt="Milu foto 1">
+                        <img src="../../public/milu_2.jpg" alt="Milu foto 2">
+                        <img src="../../public/milu_3.jpg" alt="Milu foto 3">
+                    </div>
+                    <button class="carousel_btn prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="carousel_btn next"><i class="bi bi-chevron-right"></i></button>
+                    <div class="carousel_dots"></div>
+                </div>
+                <div class="pet_info">
+                    <h2 class="pet_name">Milu</h2>
+                    <p class="pet_desc">Milu fue la mamá de Kako, estuvo con nosotros desde nosotros desde 2013 hasta el año 2019.</p>
+                </div>
+            </div>
+
         </div>
-    </main>
+    </section>
+</main>
     <footer>
         <div>
             <div class="copy_area">
-                
-                
                 <p class="foot_text"><i class="bi bi-c-circle"></i> Stevens.</p>
             </div>
             <div>
@@ -49,11 +156,12 @@
                                 class="bi bi-instagram"></i></a></li>
                     <li><a href="https://Github.com/StevensHerrera" target="_blank"><i class="bi bi-github"></i></a>
                     </li>
-                    <li><a href="linkedin.com"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/stevensherrera/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="../js/pets.js"></script>
 </body>
 
 </html>

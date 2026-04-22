@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F9FA;
+    color: var(--dark);
+    line-height: 1.6;
+    height: 100%;
+}
+
+/* Navegación */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #161B22;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 20px 220px;
+    align-items: center;
+
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #F8F9FA;
+    /* margin-left: 20px; */
+    font-weight: 700;
+}
+
+header a:hover{
+    color: #433b47;
+}
+
+main{
+    padding-top: 90px;
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.main_box{
+    height: 900px;
+}
+
+.main_div{
+    display: grid;
+}
+
+.main_text {
+    align-content: center;    
+    text-align: right;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+div {
+    text-align: center;
+}
+
+p {
+    /* max-width: 700px; */
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #0e0d0d;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+    text-align: justify;
+}
+
+/* ── GRID DE MASCOTAS ── */
+.pets_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ── TARJETA ── */
+.pet_card {
+    background: #F8F9FA;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+/* ── CARRUSEL ── */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: #f0f0f0;
+}
+
+.carousel_track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.carousel_track img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.carousel_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.2s;
+}
+
+.carousel_btn:hover { background: rgba(0, 0, 0, 0.7); }
+.carousel_btn.prev { left: 8px; }
+.carousel_btn.next { right: 8px; }
+
+.carousel_dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.55);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dot.active { background: #fff; }
+
+/* ── TEXTO ── */
+.pet_info {
+    padding: 1.1rem 1.25rem 1.4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.pet_name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.pet_desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ── TÍTULO ── */
+.section_title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2.5rem 0 0.5rem;
+    color: #1a1a1a;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .pets_grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+    .pets_grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #161B22;
+    box-shadow: 0 4px 6px rgba(108, 96, 96, 0.05);
+    max-width: 100%;
+    height: 100px;
+}
+
+.copy_area{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+footer p {
+    font-size: small;
+    color: #F8F9FA;
+    margin: 0;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+footer a  {
+    color: #F8F9FA;
+}
+
+footer a:hover{
+    color: #433b47;
+}
+
+footer ul {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+
+}
