@@ -20,7 +20,7 @@ body {
 
 header{
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #161B22;
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@ header a:hover{
 
 main{
     padding-top: 90px;
-    width: 1140px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -220,18 +220,154 @@ p {
     color: #1a1a1a;
 }
 
-/* ── RESPONSIVE ── */
+footer {
+    background-color: #161B22;
+    box-shadow: 0 4px 6px rgba(108, 96, 96, 0.05);
+    max-width: 100%;
+    height: 100px;
+}
+
+.copy_area{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+footer p {
+    font-size: small;
+    color: #F8F9FA;
+    margin: 0;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+footer a  {
+    color: #F8F9FA;
+}
+
+footer a:hover{
+    color: #433b47;
+}
+
+footer ul {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/*── RESPONSIVE ── */
+/* @media (max-width: 900px) {
+    .pets_grid { grid-template-columns: repeat(2, 1fr);  }
+    main{width: 100%;}
+    .main_box{ height: 100%;}
+    
+}  */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #F8F9FA;
+    border-radius: 2px;
+}
+
 @media (max-width: 900px) {
     .pets_grid { grid-template-columns: repeat(2, 1fr); }
+    .main_box { height: 100%;}
+
+    header {
+        padding: 20px 30px !important;
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #161B22;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    header nav.nav_open {
+        display: block;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0;
+    }
+
+    header ul li a {
+        display: block;
+        padding: 0.85rem 2rem;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
 }
 
 @media (max-width: 580px) {
-    .pets_grid { grid-template-columns: 1fr; }
+    .pets_grid { grid-template-columns: 1fr;}
+    main{width: 100%;}
+    .main_box{ height: 100%;}
+    
+
+    header {
+        padding: 20px 30px !important;
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #161B22;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    header nav.nav_open {
+        display: block;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0;
+    }
+
+    header ul li a {
+        display: block;
+        padding: 0.85rem 2rem;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
 }
-
-
-
-
 
 
 

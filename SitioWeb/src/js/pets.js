@@ -24,3 +24,23 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     carousel.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
     carousel.querySelector('.next').addEventListener('click', () => goTo(current + 1));
 });
+
+// ── Hamburguesa ──
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main_nav');
+
+    hamburger.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('nav_open');
+        hamburger.classList.toggle('active', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('nav_open');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+});

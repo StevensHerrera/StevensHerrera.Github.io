@@ -17,14 +17,19 @@
 
 <body>
     <header>
-        <a class="" href="index.html">Stevens</a>
-        <nav>
+        <a class="" href="/index.html">Stevens</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main_nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#sobre_mi">Sobre mí</a></li>
-                <li><a href="#mis_proyectos">Proyectos</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html#sobre_mi">Sobre mí</a></li>
+                <li><a href="/index.html#mis_proyectos">Proyectos</a></li>
                 <li><a href="/SitioWeb/src/views/pets.html">Mascotas</a></li>
-                <li><a href="#contact_me">Contacto</a></li>
+                <li><a href="/index.html#contact_me">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +42,7 @@
                     <p>Soy estudiante de ingeniería eléctrica con un enfoque en programación, manejo actualmente Python, JavaScript y desarrollo web con HTML y CSS. Me caracterizo por tener una mentalidad practica y orientada al aprendizaje continuo, buscando siempre mejorar mis habilidades tanto técnicas como analíticas.</p>
                 </div>
                 <div class="main_img">
-                    <img src="SitioWeb/public/silueta.png" alt="Imagen simuelta">
+                    <img src="SitioWeb/public/img/silueta.png" alt="Imagen simuelta">
                 </div>
             </div>
         </section>
@@ -47,26 +52,13 @@
                 <p>Estos son mis proyectos actuales que se encuentran en mi perfil de GitHub.</p>
                 <div class="project_div">
                     <div>
-                        <img src="/SitioWeb/public/aesthetic-one-color-bn1x9it7zmv5ms8x.jpg" alt="">
+                        <img src="/SitioWeb/public/img/aesthetic-one-color-bn1x9it7zmv5ms8x.jpg" alt="">
                     </div>
                     <div>
-                        <img src="/SitioWeb/public/Captura de pantalla 2026-04-18 000216.webp" alt="">
-                        <!-- Envolvemos TODO en el enlace para que sea clickable -->
-                        <!-- <a href="https://github.com/StevensHerrera/InventoryRegistrationProgram" target="_blank" class="preview-link">
-                            <div class="preview-card">
-                                <div class="iframe-container">
-                                    <iframe src="https://github.com/StevensHerrera/InventoryRegistrationProgram" scrolling="no"></iframe>
-                                    <div class="overlay"></div>
-                                </div>
-                                <div class="info">
-                                    <h3>Visitar Wikipedia</h3>
-                                    <p>Haz clic para ir a la página oficial</p>
-                                </div>
-                            </div>
-                        </a> -->
+                        <img src="/SitioWeb/public/img/Captura de pantalla 2026-04-18 000216.webp" alt="">
                     </div>
                     <div>
-                        <img src="/SitioWeb/public/aesthetic-one-color-bn1x9it7zmv5ms8x.jpg" alt="prueba">
+                        <img src="/SitioWeb/public/img/aesthetic-one-color-bn1x9it7zmv5ms8x.jpg" alt="prueba">
                     </div>
                 </div>
             </div>
@@ -104,9 +96,7 @@
     </main>
     <footer>
         <div>
-            <div class="copy_area">
-                
-                
+            <div class="copy_area">  
                 <p class="foot_text"><i class="bi bi-c-circle"></i> 2026 Stevens.</p>
             </div>
             <div>
@@ -120,6 +110,7 @@
             </div>
         </div>
     </footer>
+    <script src="/SitioWeb/src/js/index.js"></script>
 </body>
 
 </html>
