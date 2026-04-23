@@ -74,7 +74,7 @@ main{
     
     width: 100%;
     max-width: 1140px;
-    padding: 80px 50px ;
+    /* padding: 80px 50px ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +82,7 @@ main{
 }
 
 .main_box{
-    height: 550px;
+    height: 100%;
 }
 .main_div{
     display: flex;
@@ -123,7 +123,7 @@ p {
 
 /* Secciones Generales */
 section {
-    /* padding: 80px 10%; */
+    padding: 80px;
 }
 
 h2 {
@@ -157,32 +157,7 @@ h2 {
     justify-content: center;
 }
 
-/* Botones y Enlaces */
-/* .btn {
-    background: var(--primary);
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-}
 
-.btn:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-.linkedin-btn {
-    background: #8419cb;
-    margin-top: 20px;
-} */
-
-/* Contacto */
-
-/* .contact_box {
-    text-align: center;
-} */
 
 .form{
     display: flex;
@@ -312,53 +287,7 @@ footer ul {
 
 
 
-/* .preview-link {
-  text-decoration: none; Quita el subrayado azul feo
-  color: inherit;
-  display: inline-block;
-}
 
-.preview-card {
-  border: 2px solid #00ff41;
-  background: #111;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px;
-}
-
-Efecto al pasar el mouse (hover)
-.preview-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px #00ff41;
-}
-
-.iframe-container {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  position: relative;
-}
-
-iframe {
-  width: 1200px; 
-  height: 800px;
-  transform: scale(0.25); 
-  transform-origin: 0 0;
-  border: none;
-  pointer-events: none; Importante: ignora clics dentro del iframe
-}
-
-.overlay {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 255, 65, 0.1); Un toque de color verde
-}
-
-.info {
-  padding: 15px;
-  text-align: center;
-  font-family: 'Courier New', monospace;
-  color: #00ff41;
-} */
 
 
 @media (max-width: 900px) {
