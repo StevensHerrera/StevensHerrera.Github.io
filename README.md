@@ -1,4 +1,4 @@
-#STEVENS HERRERA PORTFOLIO
+# STEVENS HERRERA PORTFOLIO
 
 Personal portfolio website built with HTML, CSS and JavaScript. Showcases information about me, my projects, and a contact form.
 
